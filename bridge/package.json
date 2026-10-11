@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-channel-bridge",
+  "version": "1.0.0",
+  "description": "Lightweight companion bridge to broadcast WordPress posts to WhatsApp Channels",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "tunnel": "npx localtunnel --port 3000"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
