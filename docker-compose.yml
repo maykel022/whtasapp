@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  whatsapp-bridge:
+    build: .
+    container_name: whatsapp-channel-bridge
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - API_SECRET=
+    volumes:
+      - ./auth_info_baileys:/app/auth_info_baileys
